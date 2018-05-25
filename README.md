@@ -4,6 +4,14 @@ Short description and motivation.
 ## Usage
 How to use my plugin.
 
+JS init
+
+```
+$(document).on('turbolinks:load', function () {
+  blah()
+});
+```
+
 ## Installation
 Add this line to your application's Gemfile:
 

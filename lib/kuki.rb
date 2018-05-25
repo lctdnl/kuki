@@ -1,4 +1,4 @@
-require 'kuki/railtie' if defined?(Rails)
+require 'kuki/rails/engine'
 
 module Kuki
 
