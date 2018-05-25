@@ -1,1 +1,3 @@
-<%= content_tag :div, '', data: { kuki_i18n: ActiveSupport::JSON.encode(I18n.backend.send(:translations)[I18n.locale.to_sym][:cookie_consent].to_json.html_safe) } %>
+<% translation_data = local_assigns[:kuki_i18n].presence || I18n.backend.send(:translations)[I18n.locale.to_sym][:cookie_consent] %>
+
+<%= content_tag :div, '', data: { kuki_i18n: ActiveSupport::JSON.encode(translation_data.to_json.html_safe) } %>
