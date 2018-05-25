@@ -40,6 +40,12 @@ Render translations in frontend layout
 <%= render 'kuki/kuki_translations' %>
 ```
 
+Render current consent status (with revoke/access buttons) inside privacy guidelines
+
+```
+<%= render 'kuki/kuki_consent_settings' %>
+```
+
 ## Usage
 
 ### Inside JS

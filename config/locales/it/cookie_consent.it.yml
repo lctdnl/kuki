@@ -4,3 +4,9 @@ it:
     accept_button: Accettare
     decline_button: Non accettare
     read_more_link: Protezione dei dati
+    external_content_and_cookie_settings: Contenuto esterno e impostazioni dei cookie
+    accept_consent: Permettere
+    revoke_consent: Non permettere
+    status:
+      allow: autorizzato
+      deny: non autorizzato

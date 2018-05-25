@@ -4,3 +4,9 @@ en:
     accept_button: Accept
     decline_button: Decline
     read_more_link: Data protection guidelines
+    external_content_and_cookie_settings: External content and cookie settings
+    accept_consent: Allow
+    revoke_consent: Do not allow
+    status:
+      allow: allowed
+      deny: denied
