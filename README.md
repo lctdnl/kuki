@@ -7,7 +7,7 @@ Short description and motivation.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'kuki'
+gem 'kuki', github: 'lctdnl/kuki'
 ```
 
 ### Require JS
