@@ -12,6 +12,9 @@ var default_options = {
   },
   "position": "bottom-right",
   "type": "opt-in",
+  onStatusChange: function (status) {
+    window.setTimeout(function () { window.location.reload() }, 100)
+  },
 }
 
 init_kuki = function(options) {
