@@ -1,0 +1,3 @@
+module Kuki
+
+end
