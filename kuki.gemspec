@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Kuki::VERSION
   s.authors     = ["mrusa"]
   s.email       = ["michael@rusa.at"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Kuki."
-  s.description = "TODO: Description of Kuki."
+  s.homepage    = "https://stiege10.at"
+  s.summary     = "Add cookie consent and helper functions"
+  s.description = "Add cookie consent and helper functions"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
