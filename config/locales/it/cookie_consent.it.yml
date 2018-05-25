@@ -10,3 +10,4 @@ it:
     status:
       allow: autorizzato
       deny: non autorizzato
+      dismiss: non autorizzato

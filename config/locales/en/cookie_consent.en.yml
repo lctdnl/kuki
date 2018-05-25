@@ -10,3 +10,4 @@ en:
     status:
       allow: allowed
       deny: denied
+      dismiss: denied
