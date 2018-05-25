@@ -1,16 +1,23 @@
+require 'kuki/rails/view_helpers'
 
 module Kuki
   module Rails
     class Railtie < ::Rails::Railtie
       initializer "kuki.view_helpers" do
-        require 'kuki/rails/view_helpers'
         ActiveSupport.on_load( :action_view ){ include Kuki::Rails::ViewHelpers }
+      end
 
+      initializer 'kuki.i18n' do |app|
         Kuki::Rails::Railtie.instance_eval do
-          I18n.load_path += Dir.glob( File.dirname(__FILE__) + "config/locales/**/.{rb,yml}" )
+          add("config/locales/**/*.yml")
         end
-        I18n.load_path += Dir.glob( File.dirname(__FILE__) + "config/locales/**/.{rb,yml}" )
-        
+      end
+
+      protected
+
+      def self.add(pattern)
+        files = Dir[File.join(File.dirname(__FILE__), '../../..', pattern)]
+        I18n.load_path.concat(files)
       end
     end
 

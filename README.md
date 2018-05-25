@@ -34,6 +34,12 @@ $(document).on('turbolinks:load', function () {
 });
 ```
 
+Render translations in frontend layout
+
+```
+<%= render 'kuki/kuki_translations' %>
+```
+
 ## Usage
 
 ### Inside JS

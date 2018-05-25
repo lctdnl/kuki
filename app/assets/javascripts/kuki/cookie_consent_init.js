@@ -12,16 +12,21 @@ var default_options = {
   },
   "position": "bottom-right",
   "type": "opt-in",
-  "content": {
-    "message": "This website uses cookies",
-    "dismiss": "Got it",
-    "allow": "Cookies erlauben",
-    "link": "Learn more"
-  }
 }
 
-function init_kuki(options) {
-  consent_options = Object.assign(default_options, options);
+init_kuki = function(options) {
+  i18n_data = JSON.parse(JSON.parse($("[data-kuki-i18n]").data('kuki-i18n')))
+
+  i18n = {
+    "content": {
+      "message": i18n_data.cookie_hint,
+      "dismiss": i18n_data.decline_button,
+      "allow": i18n_data.accept_button,
+      "link": i18n_data.learn_more_link,
+    }
+  }
+  
+  consent_options = Object.assign(default_options, options, i18n);
   window.cookieconsent.initialise(consent_options)
 }
 
