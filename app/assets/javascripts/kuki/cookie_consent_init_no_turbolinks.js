@@ -33,7 +33,7 @@ init_kuki = function(options) {
   window.cookieconsent.initialise(consent_options)
 }
 
-$(document).on('turbolinks:load', function () {
+$(document).on('ready', function () {
   $('body').on('click', '.deny-cookie-consent', function (e) {
     e.preventDefault()
     console.log("Cookies", Cookies.get)
