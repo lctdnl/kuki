@@ -9,6 +9,6 @@
 .cc-compliance{
   display: inline-block !important;
 }
-.cc-compliance a{
+.cc-compliance .cc-btn{
   float: left !important;
 }
