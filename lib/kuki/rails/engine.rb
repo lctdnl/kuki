@@ -15,10 +15,10 @@ module Kuki
 
       protected
 
-      def self.add(pattern)
-        files = Dir[File.join(File.dirname(__FILE__), '../../..', pattern)]
-        I18n.load_path.concat(files)
-      end
+      # def self.add(pattern)
+      #   files = Dir[File.join(File.dirname(__FILE__), '../../..', pattern)]
+      #   I18n.load_path.concat(files)
+      # end
     end
 
     class Engine < ::Rails::Engine
